@@ -1,0 +1,26 @@
+.note {
+    display: flex;
+    align-items: center;
+    flex-flow: column wrap;
+    background:  #FFF;
+    padding: 15px 15px 0px 15px;
+    margin: 25px;
+
+
+    @at-root #{&}__content {
+        width: 100%;    
+    }
+
+    @at-root #{&}__btns {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: center;
+        width: 100%;
+
+        > .btn {
+            flex-basis: 50%;
+        }
+
+    } 
+
+}
